@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .list {
+        list-style: none;
+        font-size: 2rem;
+      }
+      .list li {
+      }
+      .list li::before {
+        content: '';
+        display: inline-block;
+        border: 1px solid hsl(120, 100%, 25%);
+        border-radius: 50%;
+        background-color: hsl(120, 100%, 50%);
+        width: .2em;
+        height: .2em;
+        margin-left: -1.2em;
+        margin-right: 1em;
+        vertical-align: middle;
+        transform: translateY(-0.1em);
+        
+      }
+      hr {
+        border: none;
+        height: 0px;
+        overflow: visible;
+        position: relative;
+        padding: 1rem 0;
+
+        justify-content: center;
+      }
+      hr::before {
+        content: '. . .';
+        font-size: 3rem;
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolores et suscipit? Aperiam aspernatur voluptate, officia autem omnis rerum quaerat minus eveniet rem labore error placeat harum, eum eaque molestias?</li>
+    </ul>
+    <hr>
+    <ul class="list">
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis.</li>
+    </ul>
+  </body>
+</html>
